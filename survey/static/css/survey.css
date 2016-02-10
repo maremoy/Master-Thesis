@@ -1,0 +1,68 @@
+body {
+  padding-top: 70px;
+  height: 100%;
+  background-color: #c2dde6;
+  text-align: center;
+  min-height: 2000px;
+  color:#431c5d;
+  font-family: "Montserrat-Light"
+}
+
+.lead, h1 {
+  text-align: left;
+}
+
+.lead{
+  font-size: 20px;
+}
+
+.navbar-header, h1{
+  font-family: "Montserrat-SemiBold"
+}
+
+.navbar-fixed-top{
+  background-color: white;
+  border-bottom-color: #bccbde;
+}
+
+.navbaritem-header,
+.project-name{
+ color: #431c5d;
+}
+
+.navbar-collapse .navbar-nav > li > a:hover{
+  background-color: #c2dde6;
+  opacity: 0.5;
+}
+
+.navbar-collapse .navbar-nav > .active > a,
+.navbar-collapse .navbar-nav > .active > a:hover{
+  background-color: #c2dde6;
+
+}
+
+.btn{
+  color: #431c5d;
+  background-color: #e6e9f0;
+}
+
+.radiobuttongroup{
+  display: inline-block;
+  text-align: center;
+}
+.radiobuttongroup label {
+  display: block;
+}
+
+.img-circle{
+  margin-top: 70px;
+}
+
+.survey-button{
+  margin-top: 100px;
+}
+
+.radiobuttongroup label{
+  text-align: left;
+  text-indent: 3px;
+}

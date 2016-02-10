@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+ <div class="container">
+
+ 	<div class="row">
+        <div class="col-md-6">
+          <div class="survey-description">
+            <h1>Survey title</h1>
+            <p class="lead">This survey is created by Maria Aune Remøy for researching connections between perceptions of graphical user interfaces and culture.  The data from this survey is collected for a master thesis conducted at The Norwegian University of Science and Technology. The survey is anonymous and you will not be asked for any personal information that will be traceable back to you (<a href="{% url 'home:privacy' %}">Privacy</a>). Also, the data that is being collected is only used for research purposes.</p>
+            <p class="lead">The survey is split into two parts. In the first part the participants will be asked to rate pictures of web sites according to how beautiful and user friendly the web site seem to the participant. The second part contains a few simple questions about the participants. The survey is anonymous, and no traceable data will be stored.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <img class="img-circle" src="{% static 'images/flags-4.png' %}" alt="Flags" width="250" height="250">
+            <form method="get" action="{% url 'survey:detail' 1 %}">
+                <button type="submit" class="btn btn-default survey-button">Start Survey</button>
+            </form>
+        </div>
+    </div>
+
+ 	</div>
+</div><!-- /.container -->
+
+      <footer>
+        <p>&copy; 2015 Company, Inc. &middot; <a href="{% url 'home:privacy' %}">Privacy</a> &middot; <a href="http://glyphicons.com">Glypicons</a></p>
+      </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+{% endblock %}
+
