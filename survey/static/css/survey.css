@@ -5,7 +5,7 @@ body {
   text-align: center;
   min-height: 2000px;
   color:#431c5d;
-  font-family: "Montserrat-Light"
+  font-family: "Montserrat-Light";
 }
 
 .lead, h1 {
@@ -63,6 +63,6 @@ body {
 }
 
 .radiobuttongroup label{
-  text-align: left;
-  text-indent: 3px;
+  text-align: center;
+  margin:5px;
 }

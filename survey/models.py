@@ -9,6 +9,19 @@ class Question(models.Model):
     question_name = models.CharField(max_length=200, default=" ")
     picture = models.ImageField(upload_to = "./images", blank=True)
     question_text = models.CharField(max_length=200, default=" ")
+
+    CHOICE_ONE_BEAUTIFUL = 'not beautiful'
+    CHOICE_ONE_USER_FRIENDLY = 'not easy'
+
+    CHOICE_SEVEN_BEAUTIFUL = 'very beautiful'
+    CHOICE_SEVEN_USER_FRIENDLY = 'very easy'
+
+    CHOICES_ONE=((CHOICE_ONE_BEAUTIFUL, 'not beautiful'), (CHOICE_ONE_USER_FRIENDLY, 'not user friendly'),)
+    CHOICES_SEVEN=((CHOICE_SEVEN_BEAUTIFUL, 'very beautiful'), (CHOICE_SEVEN_USER_FRIENDLY, 'very user friendly'),)
+
+    choice_one = models.CharField(max_length=200, choices=CHOICES_ONE, blank=True)
+    choice_seven = models.CharField(max_length=200, choices=CHOICES_SEVEN, blank=True)
+
     CHOICE = 1
     COUNTRYCHOICE = 2
     CHOICETYPES=((CHOICE, 1), (COUNTRYCHOICE, 2),)
@@ -19,16 +32,14 @@ class Question(models.Model):
 
 @python_2_unicode_compatible
 class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choice_text = models.CharField(max_length=200)
+    question = models.ManyToManyField(Question)
+    choice_value = models.CharField(max_length=10)
     votes = models.IntegerField(default=0)
     def __str__(self):
-        return self.choice_text
+        return self.choice_number
 
 
 class Submit(models.Model):
-    q1 = models.CharField(max_length=200)
-    q2 = models.CharField(max_length=200)
-    q3 = models.CharField(max_length=200)
+    question_one = models.ForeignKey(Choice)
     def __str__(self):
-        return 'q1: ' + self.q1 + ', q2: ' + self.q2 + ', q3: ' + self.q3
+        return self.question_one

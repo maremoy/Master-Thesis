@@ -59,7 +59,7 @@ def vote(request, question_id):
 
 def voteChoice(request, question_id, question):
     try:
-        selected_choice = [question.choice_set.get(pk=request.POST['choice1']), question.choice_set.get(pk=request.POST['choice2'])]
+        selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         percentage = 25*int(question_id) - 25
         return render(request, 'survey/detail.html', {'question':question, 'error_message': "You didn't select a choice.", "percentage": percentage})
@@ -78,7 +78,8 @@ def voteCountryChoice(request, question_id, question):
         return HttpResponseRedirect(reverse('survey:detail', kwargs={'question_id': int(question_id) + 1},))
 
 def submit(request):
-    submit = Submit(q1=choice_set['1'], q2="", q3="")
+    #submit = Submit(q1=choice_set['1'], q2="", q3="")
+    submit = Submit(question_one=choice_set['1'])
     submit.save()
     #for key in choice_set:
      #   choice_set[key].votes += 1
