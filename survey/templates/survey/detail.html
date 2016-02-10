@@ -28,7 +28,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <body>
+    {% if question.picture %}
 <img src="{% static question.picture %}" style="width:640px;height:400px;">
+{% endif %}
 <br>
 <form action="{% url 'survey:vote' question.id %}" method="post">
   {% csrf_token %}
@@ -86,7 +88,7 @@
           </button>
         {% endif %}
       </li>
-      {% if question.id < 4 %}
+      {% if question.id < 15 %}
         <li>
           <button type="submit" value="Next" name="next_button"  class="btn">Next
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
@@ -107,7 +109,6 @@
   <div class="col-md-8">
     <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="{{percentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage}}%;">
-        {{percentage}}%
       </div>
     </div>
   </div>

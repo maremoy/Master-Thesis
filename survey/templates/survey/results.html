@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>Thank you for taking the survey</h1>
-
 {% if error_message %}
-{{error_message}}
-{% endif %}
+<h1>The survey was not properly submitted</h1>
+<p class="lead">{{error_message}} <a title="mariaare@stud.ntnu.no" href="mailto:mariaare@stud.ntnu.no" role="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></p>
 
+{% else %}
+<h1>Thank you for taking the survey</h1>
+{% endif %}
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

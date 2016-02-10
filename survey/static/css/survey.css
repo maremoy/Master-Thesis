@@ -10,6 +10,7 @@ body {
 
 .lead, h1 {
   text-align: left;
+  margin-left: 10px;
 }
 
 .lead{

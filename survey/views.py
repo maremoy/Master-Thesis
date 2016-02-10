@@ -25,7 +25,7 @@ def detail(request, question_id, choice_set=choice_set):
         question = Question.objects.get(pk=question_id)
     except(Question.DoesNotExist):
         return submit(request)
-    percentage = 25*int(question_id) - 25
+    percentage = 6.67*int(question_id) - 6.67
     return render(request, 'survey/detail.html', {'question': question, 'choice_set':choice_set, 'percentage': percentage, 'countries': list(countries)})
 
 def vote(request, question_id):
@@ -42,7 +42,7 @@ def voteChoice(request, question_id, question):
     try:
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
-        percentage = 25*int(question_id) - 25
+        percentage = 6.67*int(question_id) - 6.67
         return render(request, 'survey/detail.html', {'question':question, 'error_message': "You didn't select a choice.", "percentage": percentage})
     else:
         choice_set[question_id] = selected_choice
@@ -52,7 +52,7 @@ def voteCountryChoice(request, question_id, question):
     try:
         selected_choice = request.POST['dropdown']
     except (KeyError, CountryChoice.DoesNotExist):
-        percentage = 25*int(question_id) - 25
+        percentage = 6.67*int(question_id) - 6.67
         return render(request, 'survey/detail.html', {'question':question, 'error_message': "You didn't select a choice.", 'choice_set':choice_set, 'percentage': percentage, 'countries': list(countries)})
     else:
         choice_set[question_id] = selected_choice
@@ -68,7 +68,7 @@ def submit(request):
             japanese_b = choice_set['11'], japanese_uf = choice_set['12'],
             gender = choice_set['13'], age = choice_set['14'], country = choice_set['15'],)
     except KeyError:
-        return render(request, 'survey/results.html', {'error_message': "hei paa deg"})
+        return render(request, 'survey/results.html', {'error_message': "You did not answer all the questions in the survey. If you have any questionsm, pleas send an email:"})
     else:
         submit.save()
         choice_set.clear()
