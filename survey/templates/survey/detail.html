@@ -28,6 +28,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top in-survey">
+      <div class="container">
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <form action="{% url 'survey:cancel'%}" >
+            <li><input type="submit" value="Cancel survey" class="cancel-button"></input></li>
+          </form>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
     {% if question.picture %}
 <img src="{% static question.picture %}" style="width:640px;height:400px;">
 {% endif %}
@@ -51,12 +64,12 @@
 <div class="row">
   {% for choice in question.choice_set.all %}
   <div class="radiobuttongroup">
-    {% if choice in choice_set %}
+    {% if choice_set == choice.choice_value %}
         <label class="radio-inline" for="choice{{ forloop.counter }}">
       <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" checked/>
     </label>
     {% else %}
-        {{ choice.choice_text}} <label class="radio-inline" for="choice{{ forloop.counter }}">
+        <label class="radio-inline" for="choice{{ forloop.counter }}">
       <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/>
     </label>
     {% endif %}

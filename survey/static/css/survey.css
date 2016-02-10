@@ -42,6 +42,17 @@ body {
 
 }
 
+.in-survey{
+  background-color: #c2dde6;
+  border: none;
+}
+
+.cancel-button{
+  background-color: #c2dde6;
+  border: none;
+  text-decoration: underline;
+}
+
 .btn{
   color: #431c5d;
   background-color: #e6e9f0;
