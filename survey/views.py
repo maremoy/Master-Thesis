@@ -7,8 +7,6 @@ from django_countries import countries
 
 from .models import Choice, Question, Submit
 
-page = 1
-
 class IndexView(generic.ListView):
     template_name = 'survey/index.html'
     context_object_name = 'latest_question_list'
@@ -17,25 +15,8 @@ class IndexView(generic.ListView):
         """Return the last five published questions."""
         return Question.objects.order_by('pub_date')[:]
 
-class ResultsView(generic.DetailView):
-    model = Question
-    template_name = 'survey/results.html'
-
-'''def detail(request, question_id, num=1):
-    question_list = Question.objects.order_by('pub_date')[:]
-    paginator = Paginator(question_list, 1) # Show 1 question per page
-
-    page = request.GET.get('page')
-    try:
-        questions = paginator.page(page)
-    except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
-        questions = paginator.page(1)
-    except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-        questions = paginator.page(paginator.num_pages)
-
-    return render(request, 'survey/detail.html', {'questions': questions})'''
+def results(request):
+    return render(request, 'survey/results.html')
 
 choice_set = {}
 
@@ -78,29 +59,17 @@ def voteCountryChoice(request, question_id, question):
         return HttpResponseRedirect(reverse('survey:detail', kwargs={'question_id': int(question_id) + 1},))
 
 def submit(request):
-    #submit = Submit(q1=choice_set['1'], q2="", q3="")
-    submit = Submit(question_one=choice_set['1'])
-    submit.save()
-    #for key in choice_set:
-     #   choice_set[key].votes += 1
-      #  choice_set[key].save()
-    return HttpResponseRedirect(reverse('survey:results', args={1, }))
-
-
-"""def vote(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
     try:
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
-    except (KeyError, Choice.DoesNotExist):
-        # Redisplay the question voting form.
-        return render(request, 'survey/detail.html', {
-            'question': question,
-            'error_message': "You didn't select a choice.",
-        })
+        submit = Submit(anglo_b = choice_set['1'], anglo_uf = choice_set['2'],
+            nordic_b = choice_set['3'], nordic_uf = choice_set['4'],
+            german_b = choice_set['5'], german_uf = choice_set['6'],
+            latin_b = choice_set['7'], latin_uf = choice_set['8'],
+            asian_b = choice_set['9'], asian_uf = choice_set['10'],
+            japanese_b = choice_set['11'], japanese_uf = choice_set['12'],
+            gender = choice_set['13'], age = choice_set['14'], country = choice_set['15'],)
+    except KeyError:
+        return render(request, 'survey/results.html', {'error_message': "hei paa deg"})
     else:
-        selected_choice.votes += 1
-        selected_choice.save()
-        # Always return an HttpResponseRedirect after successfully dealing
-        # with POST data. This prevents data from being posted twice if a
-        # user hits the Back button.
-        return HttpResponseRedirect(reverse('survey:detail', args=(question.id, 2)))"""
+        submit.save()
+        choice_set.clear()
+        return HttpResponseRedirect(reverse('survey:results'))

@@ -36,10 +36,24 @@ class Choice(models.Model):
     choice_value = models.CharField(max_length=10)
     votes = models.IntegerField(default=0)
     def __str__(self):
-        return self.choice_number
+        return self.choice_value
 
 
 class Submit(models.Model):
-    question_one = models.ForeignKey(Choice)
+    anglo_b = models.ForeignKey(Choice, related_name="anglo_b", blank=True, null=True)
+    anglo_uf = models.ForeignKey(Choice, related_name="anglo_uf", blank=True, null=True)
+    nordic_b = models.ForeignKey(Choice, related_name="nordic_b", blank=True, null=True)
+    nordic_uf = models.ForeignKey(Choice, related_name="nordic_uf", blank=True, null=True)
+    german_b = models.ForeignKey(Choice, related_name="german_b", blank=True, null=True)
+    german_uf = models.ForeignKey(Choice, related_name="german_uf", blank=True, null=True)
+    latin_b = models.ForeignKey(Choice, related_name="latin_b", blank=True, null=True)
+    latin_uf = models.ForeignKey(Choice, related_name="latin_uf", blank=True, null=True)
+    asian_b = models.ForeignKey(Choice, related_name="asian_b", blank=True, null=True)
+    asian_uf = models.ForeignKey(Choice, related_name="asian_uf", blank=True, null=True)
+    japanese_b = models.ForeignKey(Choice, related_name="japanese_b", blank=True, null=True)
+    japanese_uf = models.ForeignKey(Choice, related_name="japanese_uf", blank=True, null=True)
+    gender = models.ForeignKey(Choice, related_name="gender", blank=True, null=True)
+    age = models.ForeignKey(Choice, related_name="age", blank=True, null=True)
+    country = models.CharField(max_length=200, blank=True, null=True)
     def __str__(self):
-        return self.question_one
+        return "Country: " + str(self.country) + ", age: " + str(self.age)  
