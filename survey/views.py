@@ -4,8 +4,11 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django_countries import countries
+import logging
 
 from .models import Choice, Question, Submit
+
+logger = logging.getLogger(__name__)
 
 def index(request):
     request.session.flush()
@@ -24,6 +27,7 @@ def detail(request, question_id):
         request.session[question_id]='0'
     try:
         question = Question.objects.get(pk=question_id)
+        logger.error("Could not get the questions with id: " + question_id)
     except(Question.DoesNotExist):
         return submit(request)
     percentage = 6.67*int(question_id) - 6.67

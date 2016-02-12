@@ -1,0 +1,218 @@
+(0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.002) SHOW FULL TABLES; args=None
+(0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE `django_session`.`session_key` = 'bz9sxgr8em6x9zlrg158vd1xyglcanrj'; args=('bz9sxgr8em6x9zlrg158vd1xyglcanrj',)
+(0.002) DELETE FROM `django_session` WHERE `django_session`.`session_key` IN ('bz9sxgr8em6x9zlrg158vd1xyglcanrj'); args=(u'bz9sxgr8em6x9zlrg158vd1xyglcanrj',)
+Not Found: /dist/js/bootstrap.min.js
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Not Found: /assets/js/ie10-viewport-bug-workaround.js
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Not Found: /survey/e
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Not Found: /dist/js/bootstrap.min.js
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Not Found: /assets/js/ie10-viewport-bug-workaround.js
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Not Found: /assets/js/ie10-viewport-bug-workaround.js
+Not Found: /dist/js/bootstrap.min.js
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+(0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.006) SHOW FULL TABLES; args=None
+(0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+Not Found: /
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Not Found: /favicon.ico
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Not Found: /apple-touch-icon-precomposed.png
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Not Found: /apple-touch-icon.png
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
+Not Found: /home/about/
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /home/about/
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Not Found: /home
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'survey.urls' from '/Users/maria/Projects/TDT4900/survey/urls.pyc'> (survey:survey) ^survey/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/maria/django/django/template/base.py", line 889, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'home.urls' from '/Users/maria/Projects/TDT4900/home/urls.pyc'> (home:home) ^home/>"
